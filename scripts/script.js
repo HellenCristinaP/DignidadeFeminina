@@ -1,10 +1,12 @@
-const navbarNav = document.getElementById("navbarNav");
-const buttonNav = document.querySelector("button")
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
-buttonNav.addEventListener("click", () => {
-    const isExpanded = buttonNav.getAttribute('aria-expanded') === 'true';
+// const navbarNav = document.getElementById("navbarNav");
+// const buttonNav = document.querySelector("button")
 
-    navbarNav.classList.toggle("collapse")
-    buttonNav.setAttribute("aria-expanded", !isExpanded)
-    buttonNav.setAttribute("aria-label", isExpanded ? "Abrir menu" : "Fechar menu")
-})
+// buttonNav.addEventListener("click", () => {
+//     const isExpanded = buttonNav.getAttribute('aria-expanded') === 'true';
+
+//     navbarNav.classList.toggle("collapse")
+//     buttonNav.setAttribute("aria-expanded", !isExpanded)
+//     buttonNav.setAttribute("aria-label", isExpanded ? "Abrir menu" : "Fechar menu")
+// })
