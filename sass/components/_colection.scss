@@ -1,0 +1,29 @@
+#colection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+    figure {
+      background-color: #0000007c;
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
+      // padding: 10px;
+      width: 90%;
+
+      figcaption{
+        display: inline-block;
+
+      }
+   }
+}
+
+@media (min-width: 800px) {
+  #colection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+}
