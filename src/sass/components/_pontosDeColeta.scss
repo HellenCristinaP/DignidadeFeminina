@@ -1,0 +1,23 @@
+@import "vars";
+
+#pontosColeta {
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1.5rem 0;
+
+    li{
+      border-radius: 1.5rem;
+      padding: 1rem 2rem;
+      box-shadow: $box-shadow, 0 2px 1rem transparentize($color-font-dark, 0.50);
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+}

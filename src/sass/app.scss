@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Suranna&display=swap');
+@import "components/colection";
+@import "bootstrap";
+@import "components/pontosDeColeta";
+@import "components/vars";
+@import "components/mixins";
+
+.navbar {
+  background-color: $color-primary !important;
+}
+
+#navbarNav a:hover {
+  @include text-shadow(0.2, $color-font-white);
+  font-weight: bold;
+}
+
+a {
+    color: $color-font-white !important;
+}
+
+h2, h3, h4 {
+    margin: 1rem;
+    @include font($font-secundary, 1.8rem, $color-font-dark-rose);
+    font-weight: bold;
+}
+
+
+#capa {
+  background-image:
+    radial-gradient(circle, #000000a8 20%, #00000077 100%),
+    url("/absHeart.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 60vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    text-align: center;
+    @include font($font-primary, 2.5rem, $color-font-white);
+  }
+
+  p {
+    @include font($font-secundary, 1rem, $color-font-white);
+  }
+}
+
+section {
+  margin: 0 1rem;
+    p {
+        @include font($font-secundary, 1rem, $color-font-dark);
+        text-align: start;
+        margin: 1.5rem 0;
+    }
+}
+
+
+footer{
+  display: block;
+  text-align: center;
+  margin: 1rem 0;
+
+  a {
+    margin: 1rem 0;
+    color: $color-font-dark-rose !important;
+    text-decoration: none;
+  }
+  
+  a:hover{
+    @include text-shadow(0.5, CurrentColor);
+  }
+}
+
+@media (min-width: 1000px) {
+  section{
+    margin: 0 5rem;
+  }
+}

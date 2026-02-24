@@ -1,0 +1,14 @@
+@mixin font($font, $size, $color){
+    font-family: $font;
+    font-size: $size;
+    color: $color;
+    text-align: center;
+}
+
+@mixin text-shadow($numb, $color) {
+  text-shadow:
+    0 #{-$numb}px 0 $color,
+    #{-$numb}px 0 0 $color,
+    #{$numb}px 0 0 $color,
+    0 #{$numb}px 0 $color !important;
+}

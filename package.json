@@ -6,8 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass sass/style.scss styles/style.css",
-    "sass:watch": "sass --watch sass/style.scss styles/style.css",
+    "sass": "sass src/sass/style.scss src/styles/style.css",
+    "sass:watch": "sass --watch src/sass/style.scss src/styles/style.css",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
@@ -17,9 +17,12 @@
   "license": "ISC",
   "dependencies": {
     "@popperjs/core": "^2.11.8",
-    "bootstrap": "^5.3.8"
+    "bootstrap": "^5.3.8",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
   },
   "devDependencies": {
+    "@vitejs/plugin-react": "^5.1.4",
     "sass": "^1.97.3",
     "vite": "^7.3.1"
   }
