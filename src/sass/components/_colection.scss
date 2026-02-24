@@ -1,6 +1,5 @@
 .figure-container {
   position: relative;
-  display: inline-block;
   border-radius: 1rem;
   overflow: hidden;
 
@@ -12,7 +11,7 @@
     img {
       display: block;
       width: 100%;
-      height: auto;
+      height: 100%;
     }
   }
 
@@ -37,7 +36,7 @@
   }
 }
 
-@media (min-width: 1050px) {
+@media (min-width: 850px) {
   #colection {
     display: grid;
     grid-template-columns: auto auto;

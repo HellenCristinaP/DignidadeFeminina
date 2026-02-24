@@ -16,8 +16,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@popperjs/core": "^2.11.8",
+    "@preact/preset-vite": "^2.10.3",
+    "preact": "^10.28.4",
     "react": "^19.2.4",
+    "react-bootstrap": "^2.10.10",
     "react-dom": "^19.2.4"
   },
   "devDependencies": {
@@ -25,5 +27,13 @@
     "bootstrap": "^5.3.8",
     "sass": "^1.97.3",
     "vite": "^7.3.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HellenCristinaP/DignidadeFeminina.git"
+  },
+  "bugs": {
+    "url": "https://github.com/HellenCristinaP/DignidadeFeminina/issues"
+  },
+  "homepage": "https://github.com/HellenCristinaP/DignidadeFeminina#readme"
 }

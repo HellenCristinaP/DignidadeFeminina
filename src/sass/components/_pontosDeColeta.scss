@@ -1,5 +1,4 @@
 @import "vars";
-@import "bootstrap/scss/bootstrap";
 
 #pontosColeta {
   ul {
@@ -14,7 +13,7 @@
     li{
       border-radius: 1.5rem;
       padding: 1rem 2rem;
-      box-shadow: $box-shadow, 0 2px 1rem transparentize($color-font-dark, 0.50);
+      box-shadow: 0 2px 1rem transparentize($color-font-dark, 0.50);
     }
   }
 

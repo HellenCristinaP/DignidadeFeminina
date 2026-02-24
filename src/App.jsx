@@ -1,9 +1,20 @@
 import ListaDePontosDeColeta from './components/listaPontosDeColeta'
 import "./sass/app.scss"
+
+// Arquivos JPG
 import imagemMulher from "../public/mulherObservando.jpg"
 import imagemDeMulheres from "../public/girlsTogether.jpg"
 import imagemMulherP from "../public/mulherObservandoP.jpg"
 import imagemDeMulheresP from "../public/girlsTogetherP.jpg"
+
+// Arquivo AVIF
+import imagemMulheravif from "../public/mulherObservando.avif"
+import imagemMulherPavif from "../public/mulherObservandoP.avif"
+import imagemDeMulheresavif from "../public/girlsTogether.avif"
+import imagemDeMulheresPavif from "../public/girlsTogetherP.avif"
+
+
+import 'bootstrap/js/dist/collapse';
 
 function App() {
     const pontosDeColeta = [
@@ -25,44 +36,46 @@ function App() {
         }
     ]
 
+
+
     return (
         <>
-            <nav class="navbar navbar-expand-md bg-body-tertiary">
-                <div class="container-fluid d-flex flex-row">
+            <nav className="navbar navbar-expand-md bg-body-tertiary">
+                <div className="container-fluid d-flex flex-row">
 
-                    <a class="navbar-brand" href="#">Dignidade Feminina</a>
+                    <a className="navbar-brand" href="#">Dignidade Feminina</a>
 
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menu">
                         <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#FFFFFF">
                             <path d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z" />
                         </svg>
                     </button>
 
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#sobre">Sobre</a>
+                    <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul className="navbar-nav">
+                            <li className="nav-item">
+                                <a className="nav-link active" aria-current="page" href="#sobre">Sobre</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#doacao">Doação</a>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#doacao">Doação</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#coleta">Coleta</a>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#coleta">Coleta</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#pontosColeta">Pontos de Coleta</a>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#pontosColeta">Pontos de Coleta</a>
                             </li>
                         </ul>
 
                     </div>
                 </div>
             </nav>
-            <section id="capa" class="container-fluid">
+            <section id="capa" >
                 <h1>Campanha Dignidade Feminina</h1>
                 <p>Venha doar ou retirar absorvente</p>
             </section>
-            <main class="container">
+            <main className="container">
                 <section id="sobre">
                     <h2>Sobre</h2>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore molestias quod delectus repudiandae quos,
@@ -74,10 +87,32 @@ function App() {
 
                         <figure className="figure-container">
                             <picture>
-                                <source srcset={imagemMulher} media="(min-width: 1000px)" />
-                                <img src={imagemMulherP} alt="Mulher olhando para baixo solitaria" />
+                                <source
+                                    srcset={imagemMulheravif}
+                                    media="(min-width: 1000px)"
+                                    type="image/avif"
+                                />
 
+                                <source
+                                    srcset={imagemMulher}
+                                    media="(min-width: 1000px)"
+                                    type="image/jpeg"
+                                />
+
+                                <source
+                                    srcset={imagemMulherPavif}
+                                    media="(max-width: 999px)"
+                                    type="image/avif"
+                                />
+
+                                <img
+                                    src={imagemMulherP}
+                                    alt="Mulher olhando para baixo solitária"
+                                    fetchpriority="high"
+                                    className="img-fluid"
+                                />
                             </picture>
+
                             <div className="overlay">
                                 <figcaption>Você não esta sozinha</figcaption>
                             </div>
@@ -85,11 +120,28 @@ function App() {
 
                         <figure className="figure-container">
                             <picture>
-                                <source srcset={imagemDeMulheres} media="(min-width: 1000px)" />
-                                <img src={imagemDeMulheresP} alt="Mulher olhando para baixo solitaria" />
+                                <source
+                                    srcset={imagemDeMulheresavif}
+                                    media="(min-width: 1000px)"
+                                    type="image/avif"
+                                />
 
+                                <source 
+                                    srcset={imagemDeMulheresPavif}
+                                    media="(min-width: 999px)"
+                                    type="image/avif"
+                                />
+
+                                <source 
+                                    srcset={imagemDeMulheres}
+                                    media="(min-width: 1000px)"
+                                    type="image/jpg"
+                                />
+
+
+                                <img src={imagemDeMulheresP} fetchPriority="high" alt="Mulher olhando para baixo solitaria" aria-hidden="true" />
                             </picture>
-                            <div className="overlay">
+                            <div class="overlay">
                                 <figcaption>Estamos juntos com você</figcaption>
                             </div>
                         </figure>

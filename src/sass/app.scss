@@ -1,11 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Suranna&display=swap');
 @import "components/colection";
 @import "components/pontosDeColeta";
 @import "components/vars";
 @import "components/mixins";
 
+// 1. Essenciais do Bootstrap
+// @import "bootstrap/scss/bootstrap";
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+
+// 2. Componentes que você usa (Exemplos)
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/bootstrap-grid";
+@import "bootstrap/scss/navbar";
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/transitions"; // Importante para a animação do menu
+
 .navbar {
+  position: sticky;
+  top: 0;
   background-color: $color-primary !important;
+  font-weight: 600;
+  z-index: 2;
+
+  a {
+    @include font($font-secundary, 1.2rem, $color-font-dark-rose);
+    color: $color-font-white !important;
+  }
 }
 
 #navbarNav a:hover {
@@ -13,26 +34,33 @@
   font-weight: bold;
 }
 
-a {
-    color: $color-font-white !important;
+h2,
+h3,
+h4 {
+  margin: 1rem;
+  @include font($font-secundary, 1.8rem, $color-font-dark-rose);
+  font-display: fallback;
+  font-weight: bold;
 }
 
-h2, h3, h4 {
-    margin: 1rem;
-    @include font($font-secundary, 1.8rem, $color-font-dark-rose);
-    font-weight: bold;
+p {
+  font-display: fallback;
 }
 
+figcaption{
+  @include font($font-secundary, 1rem, $color-font-white);
+}
 
 #capa {
   background-image:
     radial-gradient(circle, #000000a8 20%, #00000077 100%),
-    url("/absHeart.jpg");
+    url("/absHeartP.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
   height: 60vh;
+  margin: 0;
 
   display: flex;
   flex-direction: column;
@@ -51,15 +79,14 @@ h2, h3, h4 {
 
 section {
   margin: 0 1rem;
-    p {
-        @include font($font-secundary, 1rem, $color-font-dark);
-        text-align: start;
-        margin: 1.5rem 0;
-    }
+  p {
+    @include font($font-secundary, 1rem, $color-font-dark);
+    text-align: start;
+    margin: 1.2rem 0;
+  }
 }
 
-
-footer{
+footer {
   display: block;
   text-align: center;
   margin: 1rem 0;
@@ -69,14 +96,20 @@ footer{
     color: $color-font-dark-rose !important;
     text-decoration: none;
   }
-  
-  a:hover{
+
+  a:hover {
     @include text-shadow(0.5, CurrentColor);
   }
 }
 
-@media (min-width: 1000px) {
-  section{
-    margin: 0 5rem;
+@media (min-width: 850px) {
+  #capa {
+    background-image:
+      radial-gradient(circle, #000000a8 20%, #00000077 100%),
+      url("/absHeart.jpg");
+  }
+
+  section {
+    margin: 0 4.5rem;
   }
 }

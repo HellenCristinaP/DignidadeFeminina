@@ -1,6 +1,18 @@
-$color-primary: #ff8990;
-$color-font-white: #fdedee;
+@font-face {
+    font-family: "Suranna";
+    src: url("/src/assets/gokuH6ztGkFjWe58hBNTTkClkPw.woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "DM Sans";
+    src: url("/src/assets/rP2Hp2ywxg089UriCZOIHTWEBlw.woff2");
+    font-display: optional;
+}
+
+$color-primary: #d1545c;
+$color-font-white: #fcfcfc;
 $color-font-dark-rose: #cf000a;
 $color-font-dark: #0e0e0e;
-$font-primary: "Suranna", serif;
-$font-secundary: "DM Sans", sans-serif;
+$font-primary: "Suranna", "Times New Roman", serif;
+$font-secundary: "DM Sans", "Open Sans", "Nunito Sans", sans-serif;
