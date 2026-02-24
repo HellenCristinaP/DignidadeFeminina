@@ -1,8 +1,9 @@
 import ListaDePontosDeColeta from './components/listaPontosDeColeta'
 import "./sass/app.scss"
 import imagemMulher from "../public/mulherObservando.jpg"
-import imagemCapa from "../public/absHeart.jpg"
 import imagemDeMulheres from "../public/girlsTogether.jpg"
+import imagemMulherP from "../public/mulherObservandoP.jpg"
+import imagemDeMulheresP from "../public/girlsTogetherP.jpg"
 
 function App() {
     const pontosDeColeta = [
@@ -72,14 +73,22 @@ function App() {
                     <div id="colection">
 
                         <figure className="figure-container">
-                            <img src={imagemMulher} className="img-fluid" alt="mulher olhando para baixo solitaria" />
+                            <picture>
+                                <source srcset={imagemMulher} media="(min-width: 1000px)" />
+                                <img src={imagemMulherP} alt="Mulher olhando para baixo solitaria" />
+
+                            </picture>
                             <div className="overlay">
                                 <figcaption>Você não esta sozinha</figcaption>
                             </div>
                         </figure>
 
                         <figure className="figure-container">
-                            <img src={imagemDeMulheres} className="img-fluid rounded" alt="um trio de mulheres, uma branca, uma negra e uma asiática" />
+                            <picture>
+                                <source srcset={imagemDeMulheres} media="(min-width: 1000px)" />
+                                <img src={imagemDeMulheresP} alt="Mulher olhando para baixo solitaria" />
+
+                            </picture>
                             <div className="overlay">
                                 <figcaption>Estamos juntos com você</figcaption>
                             </div>
@@ -93,7 +102,7 @@ function App() {
                         quos!</p>
                 </section>
                 <section id="coleta">
-                    <h2>Como pega meu absorvente?</h2>
+                    <h2>Como pegar meu absorvente?</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim saepe iste neque animi eum possimus autem tempore
                         esse repudiandae atque pariatur sequi, at, dolor dicta doloremque aliquam similique assumenda ducimus!</p>
 

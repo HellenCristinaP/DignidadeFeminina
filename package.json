@@ -17,12 +17,12 @@
   "license": "ISC",
   "dependencies": {
     "@popperjs/core": "^2.11.8",
-    "bootstrap": "^5.3.8",
     "react": "^19.2.4",
     "react-dom": "^19.2.4"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^5.1.4",
+    "bootstrap": "^5.3.8",
     "sass": "^1.97.3",
     "vite": "^7.3.1"
   }
