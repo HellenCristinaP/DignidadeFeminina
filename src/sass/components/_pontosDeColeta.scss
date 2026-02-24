@@ -1,5 +1,9 @@
 @import "vars";
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins"
 @import "bootstrap/scss/helpers";
+@import "bootstrap/scss/utilities";
 
 #pontosColeta {
   ul {
