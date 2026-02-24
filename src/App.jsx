@@ -75,7 +75,7 @@ function App() {
                         <figure className="figure-container">
                             <picture>
                                 <source srcset={imagemMulher} media="(min-width: 1000px)" />
-                                <img src={imagemMulherP} alt="Mulher olhando para baixo solitaria" />
+                                <img src={imagemMulherP} fetchpriority="high" alt="Mulher olhando para baixo solitaria" />
 
                             </picture>
                             <div className="overlay">
@@ -86,7 +86,7 @@ function App() {
                         <figure className="figure-container">
                             <picture>
                                 <source srcset={imagemDeMulheres} media="(min-width: 1000px)" />
-                                <img src={imagemDeMulheresP} alt="Mulher olhando para baixo solitaria" />
+                                <img src={imagemDeMulheresP} fetchpriority="high" alt="Mulher olhando para baixo solitaria" />
 
                             </picture>
                             <div className="overlay">
