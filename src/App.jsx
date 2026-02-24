@@ -120,26 +120,9 @@ function App() {
 
                         <figure className="figure-container">
                             <picture>
-                                <source
-                                    srcset={imagemDeMulheresavif}
-                                    media="(min-width: 1000px)"
-                                    type="image/avif"
-                                />
+                                <source srcset={imagemDeMulheres} media="(min-width: 1000px)" />
+                                <img src={imagemDeMulheresP} alt="Mulher olhando para baixo solitaria" />
 
-                                <source 
-                                    srcset={imagemDeMulheresPavif}
-                                    media="(min-width: 999px)"
-                                    type="image/avif"
-                                />
-
-                                <source 
-                                    srcset={imagemDeMulheres}
-                                    media="(min-width: 1000px)"
-                                    type="image/jpg"
-                                />
-
-
-                                <img src={imagemDeMulheresP} fetchPriority="high" alt="Mulher olhando para baixo solitaria" aria-hidden="true" />
                             </picture>
                             <div class="overlay">
                                 <figcaption>Estamos juntos com você</figcaption>
