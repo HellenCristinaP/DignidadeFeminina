@@ -36,8 +36,6 @@ function App() {
         }
     ]
 
-
-
     return (
         <>
             <nav className="navbar navbar-expand-md bg-body-tertiary">
@@ -78,11 +76,24 @@ function App() {
             <main className="container">
                 <section id="sobre">
                     <h2>Sobre</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore molestias quod delectus repudiandae quos,
-                        voluptatibus consequuntur nobis odio, molestiae suscipit minus, autem eveniet quas ipsa incidunt dolorem ab
-                        provident esse?</p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non nihil recusandae sunt numquam neque quae vero ex
-                        est voluptate, delectus accusantium eius distinctio quia quo, omnis ad temporibus. Fugit, itaque.</p>
+                    <h3>Pobreza Menstrual</h3>
+                    <p>Antes de falar da campanha, preicsamos entender o problema que ele resolve. <br />
+                        A pobreza menstrual é a falta de recursos para obter absorvente, como: falta de recursos financeiros, infraestrutura e informação.
+                        <h3>A Campanha</h3>
+                        <p>O objetivo é a distribuição gratuita de absorventes para estudantes de escolas públicas, pessoas em situação de vulnerabilidade, podendo ou não ter CadÚnico e sem a necessidade de comprovação de renda, para ser acessível a todos facilmente. Como consequência, conseguimos levar educação sobre saúde menstrual e redução de evasão escolar, evitando que jovens percam aulas por não conterem o fluxo menstrual.</p>
+                    </p>
+                    <h3>Dados</h3>
+                    <ol>
+                        <li>
+                            1 em cada 4 meninas já faltou a escola por não ter absorvente.
+                        </li>
+                        <li>
+                            Evitar substitutos inadequados, como: jornal, sacos plásticos e pedaços de panos, podendo comprometer a saúde.
+                        </li>
+                        <li>
+                            Mais de 700 mil meninas vivem sem acesso aos banheiros ou casas, nçao contendo Higiene Básica.
+                        </li>
+                    </ol>
                     <div id="colection">
 
                         <figure className="figure-container">
@@ -132,21 +143,26 @@ function App() {
                 </section>
                 <section id="doacao">
                     <h2>Como fazer doação?</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, ut ipsam ipsa explicabo necessitatibus
-                        dolores assumenda reiciendis nisi, suscipit, error illo cum ea fugiat. Eligendi dolores nobis blanditiis magnam
-                        quos!</p>
+                    <p>
+                        Fizemos parceria com algumas instituições, para criar "caixas de coleta" próprias para arrecadar itens de higiene, que são posteriormente doados a escolas públicas e abrigos. <br />
+                        Vá para um ponto de coleta mais próxima de você e leve um pacote de absorvente com abas ou sem, seco ou suave. A única preferência é que seja do pacote pequeno para ser de manuseio acessível. Existe vários pontos de coleta, deixe seu amor com o próximo e doe no ponto de coleta mais perto de você.
+                        <blockquote>
+                            <i>
+                                "Quando precisar, PEGUE, quando puder, DOE!"
+                            </i>
+                        </blockquote>
+                    </p>
                 </section>
                 <section id="coleta">
                     <h2>Como pegar meu absorvente?</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim saepe iste neque animi eum possimus autem tempore
-                        esse repudiandae atque pariatur sequi, at, dolor dicta doloremque aliquam similique assumenda ducimus!</p>
+                    <p>
+                        Muito fácil! Vá até uma instituição de coleta mais próxima de você.
+                    </p>
 
                 </section>
                 <section id="pontosColeta">
                     <h2>Pontos de Coleta</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non laudantium id assumenda fugiat nesciunt amet
-                        corrupti aperiam mollitia beatae reiciendis maxime, iusto illo laboriosam veritatis a eius. Molestiae, assumenda
-                        neque!</p>
+                    <p>Venha doar ou pegar seu absorvente"</p>
                     <ul>
                         {pontosDeColeta.map((ponto, index) =>
                             <ListaDePontosDeColeta
