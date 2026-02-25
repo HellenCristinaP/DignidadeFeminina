@@ -97,7 +97,7 @@ function App() {
                     <div id="colection">
 
                         <figure className="figure-container">
-                            <picture>
+                            <picture aria-hidden="true">
                                 <source
                                     srcset={imagemMulheravif}
                                     media="(min-width: 1000px)"
@@ -130,7 +130,7 @@ function App() {
                         </figure>
 
                         <figure className="figure-container">
-                            <picture>
+                            <picture aria-hidden="true">
                                 <source srcset={imagemDeMulheres} media="(min-width: 1000px)" />
                                 <img src={imagemDeMulheresP} alt="Mulher olhando para baixo solitaria" />
 
@@ -144,8 +144,7 @@ function App() {
                 <section id="doacao">
                     <h2>Como fazer doação?</h2>
                     <p>
-                        Fizemos parceria com algumas instituições, para criar "caixas de coleta" próprias para arrecadar itens de higiene, que são posteriormente doados a escolas públicas e abrigos. <br />
-                        Vá para um ponto de coleta mais próxima de você e leve um pacote de absorvente com abas ou sem, seco ou suave. A única preferência é que seja do pacote pequeno para ser de manuseio acessível. Existe vários pontos de coleta, deixe seu amor com o próximo e doe no ponto de coleta mais perto de você.
+                        Fizemos parceria com algumas instituições para criar "caixas de coleta" próprias para arrecadar itens de higiene, que são posteriormente doados a escolas públicas e abrigos. <br /> ​Vá ao ponto de coleta mais próximo de você e leve um pacote de absorventes (com ou sem abas, cobertura seca ou suave). Dê preferência aos pacotes pequenos para que o manuseio seja mais fácil. Existem vários pontos de coleta; demonstre seu amor ao próximo e doe no local mais perto de você.
                         <blockquote>
                             <i>
                                 "Quando precisar, PEGUE, quando puder, DOE!"
