@@ -162,7 +162,7 @@ function App() {
                 </section>
                 <section id="pontosColeta">
                     <h2>Pontos de Coleta</h2>
-                    <p>Venha doar ou pegar seu absorvente"</p>
+                    <p>Venha doar ou pegar seu absorvente</p>
                     <ul>
                         {pontosDeColeta.map((ponto, index) =>
                             <ListaDePontosDeColeta
