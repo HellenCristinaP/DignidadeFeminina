@@ -80,7 +80,7 @@ function App() {
                     <p>Antes de falar da campanha, preicsamos entender o problema que ele resolve. <br />
                         A pobreza menstrual é a falta de recursos para obter absorvente, como: falta de recursos financeiros, infraestrutura e informação.
                         <h3>A Campanha</h3>
-                        <p>O objetivo é a distribuição gratuita de absorventes para estudantes de escolas públicas, pessoas em situação de vulnerabilidade, podendo ou não ter CadÚnico e sem a necessidade de comprovação de renda, para ser acessível a todos facilmente. Como consequência, conseguimos levar educação sobre saúde menstrual e redução de evasão escolar, evitando que jovens percam aulas por não conterem o fluxo menstrual.</p>
+                        <p>​O objetivo é garantir a distribuição gratuita de absorventes para estudantes da rede pública e pessoas em situação de vulnerabilidade, independentemente de inscrição no CadÚnico ou comprovação de renda. Nosso foco é o acesso universal e desburocratizado. <br />Como resultado, promovemos a educação sobre saúde menstrual e combatemos a evasão escolar, garantindo que ninguém precise faltar às aulas por falta de itens básicos. <br /> <strong> Observação: A Dignidade Feminina também abrange homens trans e pessoas não-binárias que menstruam, garantindo inclusão.</strong></p>
                     </p>
                     <h3>Dados</h3>
                     <ol>
