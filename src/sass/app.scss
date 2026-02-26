@@ -16,6 +16,13 @@
 @import "bootstrap/scss/nav";
 @import "bootstrap/scss/transitions"; // Importante para a animação do menu
 
+.Carregando {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
 .navbar {
   position: sticky;
   top: 0;
@@ -43,8 +50,11 @@ h4 {
   font-weight: bold;
 }
 
-p {
+p, ol > li {
+  @include font($font-secundary, 1rem, #000000);
   font-display: fallback;
+  text-align: start;
+  margin: 1.2rem 0;
 }
 
 figcaption{
@@ -79,11 +89,6 @@ figcaption{
 
 section {
   margin: 0 1rem;
-  p {
-    @include font($font-secundary, 1rem, $color-font-dark);
-    text-align: start;
-    margin: 1.2rem 0;
-  }
 }
 
 blockquote {

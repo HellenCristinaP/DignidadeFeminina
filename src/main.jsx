@@ -28,7 +28,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                                 <a className="nav-link" href="#coleta">Coleta</a>
                             </li>
                             {/* <li className="nav-item">
-                                <a className="nav-link" href="#pontosColeta">Contato</a>
+                                <a className="nav-link" href="/contato">Contato</a>
                             </li> */}
                         </ul>
 
