@@ -2,19 +2,6 @@ import ListaDePontosDeColeta from "../components/listaPontosDeColeta"
 import pontosDeColeta from "../data/jsonPontosDeColeta.json"
 import "../sass/app.scss"
 
-// Arquivos JPG
-import imagemMulher from "../../public/mulherObservando.jpg"
-import imagemDeMulheres from "../../public/girlsTogether.jpg"
-import imagemMulherP from "../../public/mulherObservandoP.jpg"
-import imagemDeMulheresP from "../../public/girlsTogetherP.jpg"
-
-// Arquivo AVIF
-import imagemMulheravif from "../../public/mulherObservando.avif"
-import imagemMulherPavif from "../../public/mulherObservandoP.avif"
-import imagemDeMulheresavif from "../../public/girlsTogether.avif"
-import imagemDeMulheresPavif from "../../public/girlsTogetherP.avif"
-
-
 import 'bootstrap/js/dist/collapse';
 
 function Home() {
@@ -56,23 +43,23 @@ function Home() {
                         <figure className="figure-container">
                             <picture aria-hidden="true">
                                 <source
-                                    srcset={imagemMulheravif}
+                                    srcset="/mulherObservando.avif"
                                     media="(min-width: 1000px)"
                                     type="image/avif"
                                 />
                                 <source
-                                    srcset={imagemMulher}
+                                    srcset="/mulherObservando.jpg"
                                     media="(min-width: 1000px)"
                                     type="image/jpeg"
                                 />
                                 <source
-                                    srcset={imagemMulherPavif}
+                                    srcset="/mulherObservandoP.avif"
                                     media="(max-width: 999px)"
                                     type="image/avif"
                                 />
 
                                 <img
-                                    src={imagemMulherP}
+                                    src="/mulherObservandoP.jpg"
                                     alt="Mulher olhando para baixo solitária"
                                     className="img-fluid"
                                 />
@@ -86,24 +73,25 @@ function Home() {
                         <figure className="figure-container">
                             <picture aria-hidden="true">
                                 <source
-                                    srcset={imagemDeMulheresavif}
+                                    srcset="/girlsTogether.avif"
                                     media="(min-width: 1000px)"
                                     type='image/avif'
                                 />
                                 <source
-                                    srcset={imagemDeMulheres}
+                                    srcset="/girlsTogether.jpg"
                                     media="(min-width: 1000px)"
                                     type='image/jpeg'
                                 />
                                 <source
-                                    srcset={imagemDeMulheresPavif}
+                                    srcset="/girlsTogetherP.avif"
                                     media="(min-width: 999px)"
                                     type='image/avif'
                                 />
 
                                 <img
-                                    src={imagemDeMulheresP}
-                                    alt="Um trio de mulheres sorrindo" loading="lazy"
+                                    src="/girlsTogetherP.jpg"
+                                    alt="Um trio de mulheres sorrindo"
+                                    loading="lazy"
                                     className="img-fluid"
                                 />
 
