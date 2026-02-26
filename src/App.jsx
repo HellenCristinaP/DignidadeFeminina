@@ -38,37 +38,6 @@ function App() {
 
     return (
         <>
-            <nav className="navbar navbar-expand-md bg-body-tertiary">
-                <div className="container-fluid d-flex flex-row">
-
-                    <a className="navbar-brand" href="#">Dignidade Feminina</a>
-
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menu">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#FFFFFF">
-                            <path d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z" />
-                        </svg>
-                    </button>
-
-                    <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
-                        <ul className="navbar-nav">
-                            <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="#sobre">Sobre</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#doacao">Doação</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#coleta">Coleta</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#pontosColeta">Pontos de Coleta</a>
-                            </li>
-                        </ul>
-
-                    </div>
-                </div>
-            </nav>
             <section id="capa" >
                 <h1>Campanha Dignidade Feminina</h1>
                 <p>Venha doar ou retirar absorvente</p>
@@ -77,10 +46,15 @@ function App() {
                 <section id="sobre">
                     <h2>Sobre</h2>
                     <h3>Pobreza Menstrual</h3>
-                    <p>Antes de falar da campanha, preicsamos entender o problema que ele resolve. <br />
-                        A pobreza menstrual é a falta de recursos para obter absorvente, como: falta de recursos financeiros, infraestrutura e informação.
-                        <h3>A Campanha</h3>
-                        <p>​O objetivo é garantir a distribuição gratuita de absorventes para estudantes da rede pública e pessoas em situação de vulnerabilidade, independentemente de inscrição no CadÚnico ou comprovação de renda. Nosso foco é o acesso universal e desburocratizado. <br />Como resultado, promovemos a educação sobre saúde menstrual e combatemos a evasão escolar, garantindo que ninguém precise faltar às aulas por falta de itens básicos. <br /> <strong> Observação: A Dignidade Feminina também abrange homens trans e pessoas não-binárias que menstruam, garantindo inclusão.</strong></p>
+                    <p>
+                        Antes de falar da campanha, preicsamos entender o problema que ele resolve. <br />
+                        A pobreza menstrual é a falta de recursos para obter absorvente, um item de higiene básica. Por motivos como: falta de recursos financeiros, infraestrutura e informação. Podendo trazer riscos a saúde e ferindo os direitos humanos.
+                    </p>
+                    <h3>A Campanha</h3>
+                    <p>
+                        O CAMPB junto com o <a href="https://www.gov.br/saude/pt-br/composicao/saps/dignidade-menstrual">Programa Dignidade Menstrual</a> da Prefeitura, montou a Campanha Dignidade Feminina para ajudar a combate a pobreza menstrual. <br />
+                        O objetivo é garantir a distribuição gratuita de absorventes para estudantes da rede pública e pessoas em situação de vulnerabilidade, independentemente de inscrição no CadÚnico ou comprovação de renda. Nosso foco é o acesso universal e desburocratizado. <br />Como resultado, promovemos a educação sobre saúde menstrual e combatemos a evasão escolar, garantindo que ninguém precise faltar às aulas por falta de itens básicos. <br />
+                        Lembrando que a campanha abrange homens trans e pessoas não-binárias que menstruam!
                     </p>
                     <h3>Dados</h3>
                     <ol>
@@ -91,7 +65,7 @@ function App() {
                             Evitar substitutos inadequados, como: jornal, sacos plásticos e pedaços de panos, podendo comprometer a saúde.
                         </li>
                         <li>
-                            Mais de 700 mil meninas vivem sem acesso aos banheiros ou casas, nçao contendo Higiene Básica.
+                            Mais de 700 mil meninas vivem sem acesso aos banheiros ou casas, não contendo Higiene Básica.
                         </li>
                     </ol>
                     <div id="colection">
@@ -155,9 +129,10 @@ function App() {
                 <section id="coleta">
                     <h2>Como pegar meu absorvente?</h2>
                     <p>
-                        Muito fácil! Vá até uma instituição de coleta mais próxima de você.
+                        Quem atenda os critérios: estudantes da rede pública e pessoas em situação de vulnerabilidade, independentemente de inscrição no CadÚnico ou comprovação de renda. <br />
+                        Atendendo esses critérios, só ir para um ponto de coleta mais próximo e pedir orientações.
                     </p>
-
+                    <p><strong> Observação: A Dignidade Feminina também abrange homens trans e pessoas não-binárias que menstruam, garantindo inclusão.</strong></p>
                 </section>
                 <section id="pontosColeta">
                     <h2>Pontos de Coleta</h2>
@@ -171,7 +146,7 @@ function App() {
                         )}
                     </ul>
                 </section>
-            </main>
+            </main >
             <footer>
                 <hr />
                 Criado por <a href="https://www.linkedin.com/in/hellen-cristina-araujo-da-silva/"> Hellen Cristina</a>
