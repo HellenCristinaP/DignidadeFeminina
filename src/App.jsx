@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { lazy, Suspense } from 'react';
 import "./sass/app.scss"
-import { render } from 'preact';
 
 import 'bootstrap/js/dist/collapse';
 

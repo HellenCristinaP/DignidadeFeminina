@@ -3,18 +3,17 @@
 @import "components/vars";
 @import "components/mixins";
 
-// 1. Essenciais do Bootstrap
-// @import "bootstrap/scss/bootstrap";
+
 @import "bootstrap/scss/functions";
 @import "bootstrap/scss/variables";
 @import "bootstrap/scss/mixins";
 
-// 2. Componentes que você usa (Exemplos)
+
 @import "bootstrap/scss/reboot";
 @import "bootstrap/scss/bootstrap-grid";
 @import "bootstrap/scss/navbar";
 @import "bootstrap/scss/nav";
-@import "bootstrap/scss/transitions"; // Importante para a animação do menu
+@import "bootstrap/scss/transitions";
 
 .Carregando {
   display: flex;
