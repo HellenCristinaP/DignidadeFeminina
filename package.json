@@ -12,6 +12,11 @@
     "build": "vite build",
     "preview": "vite preview"
   },
+  "alias": {
+    "react": "preact/compat",
+    "react-dom/test-utils": "preact/test-utils",
+    "react-dom": "preact/compat"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
