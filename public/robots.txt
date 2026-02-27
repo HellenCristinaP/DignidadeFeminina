@@ -1,4 +1,4 @@
-user-agent: 
+user-agent: *
 disallow: /Contato
 allow: /
 sitemap: https://www.gov.br/saude/pt-br/composicao/saps/dignidade-menstrual
