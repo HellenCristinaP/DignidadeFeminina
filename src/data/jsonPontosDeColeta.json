@@ -4,8 +4,8 @@
     "endereco": "Endereço: R. Rafael Costabile, 719 - Centerville, Bertioga - SP, 11250-258"
   },
   {
-    "nome": "SABER/Anglo",
-    "endereco": "R. Antônio Saldanha, 110 - Centervalle, Bertioga - SP, 11250-000"
+    "nome": "EasyComp Internacional",
+    "endereco": "R. João Ramalho, 1354 - Centro, Bertioga - SP, 11250-264"
   },
   {
     "nome": "FABE",
@@ -14,5 +14,9 @@
   {
     "nome": "Viver Aprendendo",
     "endereco": "R. Ivo Henrique, 69 - Vila Itapanhau, Bertioga - SP, 11250-234"
+  },
+    {
+    "nome": "IPECEX",
+    "endereco": "R. João Ramalho, 1354 - Centro, Bertioga - SP, 11250-264"
   }
 ]
