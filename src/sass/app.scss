@@ -96,20 +96,20 @@ blockquote {
   color: #474747;
 }
 
+a {
+	margin: 1rem 0;
+	color: $color-font-dark-rose !important;
+  text-decoration: none;
+}
+
+a:hover {
+	@include text-shadow(0.3, CurrentColor);
+}
+
 footer {
   display: block;
   text-align: center;
   margin: 1rem 0;
-
-  a {
-    margin: 1rem 0;
-    color: $color-font-dark-rose !important;
-    text-decoration: none;
-  }
-
-  a:hover {
-    @include text-shadow(0.5, CurrentColor);
-  }
 }
 
 @media (min-width: 850px) {
